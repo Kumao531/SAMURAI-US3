@@ -26,7 +26,7 @@
     <header>
 
       <!-- ロゴ -->
-      <a href="./top.html" id="logo" id="nav-pc"><img src="./images/TradeMark/TradeMarkWide.svg" alt="トップページに戻る"></a>
+      <a href="./top.html" id="logo"><img src="./images/TradeMark/TradeMarkWide.png" alt="トップページに戻る"></a>
 
       <!-- ************************** -->
       <!-- バナー・ナビゲーション部分 -->
@@ -42,7 +42,7 @@
       </nav>
 
       <!-- スマフォ用メニューボタン -->
-      <img id="menu-sp" src="./images/Button/button-menu.png" alt="ナビゲーションを開く"
+      <img id="menu-sp" src="./images/TradeMark/TradeMarkWide.png" alt="ナビゲーションを開く"
         onclick="document.getElementById('nav-sp').style.display = 'block'" />
 
       <!-- スマフォ用ナビゲーション -->
@@ -51,7 +51,7 @@
           onclick="document.getElementById('nav-sp').style.display = 'none'" />
 
         <a id="logo-sp" href="./top.html" onclick="document.getElementById('nav-sp').style.display = 'none'">
-          <img id="logo-sp" src="./images/TradeMark/TradeMarkWide.svg" alt="トップページに戻る" />
+          <img id="logo-sp" src="./images/TradeMark/TradeMarkWide.png" alt="トップページに戻る" />
         </a>
         <a class="menu" href="./company.html" onclick="document.getElementById('nav-sp').style.display = 'none';">会社紹介</a>
         <a class="menu" href="./services.html" onclick="document.getElementById('nav-sp').style.display = 'none';">サービス説明</a>
@@ -83,50 +83,65 @@
           </div>
         </section>
 
+        <!-- ページ内での説明本体 -->
         <!-- 会社概要紹介 -->
         <section>
-        <div  id="main-description">
+        <div id="main-description">
 
           <!-- ご挨拶 -->
           <div id="introduction">
-            <h2>ご挨拶</h2>
-            <p>
-              このたびは<strong>ミカゲ.IT.ラボ</strong>のホームページへ訪問してくださいましてありがとうございます。<br><br>
-              私たちは情報処理業界におきまして、単にシステム開発を行うだけではなく、お客様が創造するサービスのありかた、
-              そのサービスを創り出すビジネスの流れ、サービスを行うための業務のデザイン、そして、サービスを実現するための
-              システムの制作までを視野においた、<strong>「トータルシステム コーディネイト」</strong>と呼ぶ、
-              <strong>「お客様のサービスを産み出すためのITの有様」</strong>を総合的に形作くるサービスを提供しています。
-            </p>
+            <div id="intro-pc">
+              <h2>ご挨拶</h2>
+              <p>
+                　このたびは<strong>ミカゲ.IT.ラボ</strong>のホームページへ訪問してくださいましてありがとうございます。<br><br>
+                　私たちは情報処理業界におきまして、単にシステム開発を行うだけではなく、<br>お客様が創造するサービスのありかた、そのサービスを創り出すビジネスの<br>流れ、サービスを行うための業務のデザイン、そして、サービスを実現するためのシステムの制作までを視野においた、<strong>「トータルシステム
+                  コーディネイト」</strong>と<br>呼ぶ、<strong>「お客様のサービスを産み出すためのITの有様」</strong>を総合的に形作くる<br>サービスを提供しています。
+              </p>
+            </div>
+            <div id="intro-sp">
+              <h2>ご挨拶</h2>
+              <p>
+                　このたびは<strong>ミカゲ.IT.ラボ</strong>のホームページへ訪問してくださいましてありがとうございます。<br><br>
+                　私たちは情報処理業界におきまして、単にシステム開発を行うだけではなく、<br>お客様が創造するサービスのありかた、そのサービスを創り出すビジネスの<br>流れ、サービスを行うための業務のデザイン、そして、サービスを実現するためのシステムの制作までを視野においた、<strong>「トータルシステム
+                  コーディネイト」</strong>と<br>呼ぶ、<strong>「お客様のサービスを産み出すためのITの有様」</strong>を総合的に形作くる<br>サービスを提供しています。
+              </p>
+            </div>
           </div>
 
           <!-- 会社説明 -->
           <div id="our-company">
             <h3>会社概要</h3>
 
-            <!-- どんな会社なのか -->
-            <div class="two-frame">
-              <p>どんな会社なのか</p>
-              <ul>
-                <li>お客様における、よりよいサービスとは何かを考えます</li>
-                <li>そのためのビジネスの仕組みを考えます</li>
-                <li>そしてビジネスの実現方法を考えます</li>
-                <li>最後にどこをシステムにするのかを考え皆様により良いシステムを提供します</li>
-              </ul>
-              <img class="wood-frame" src="./images/Page-top/flame.png" alt="どんな会社なのか" />
-              <img class="detail-button" src="./images/Button/ButtonMoreDetail.png" alt="より詳細ボタン">
-            </div>
+            <div id="our-company-description">
+              <!-- どんな会社なのか -->
+              <div class="two-frame">
+                <div id="what-company">
+                  <img class="wood-frame" src="./images/Page-top/flame.png" alt="どんな会社なのか" />
+                  <p>どんな会社なのか</p>
+                  <ul>
+                    <li>お客様における、よりよいサービスとは何かを考えます</li>
+                    <li>そのためのビジネスの仕組みを考えます</li>
+                    <li>そしてビジネスの実現方法を考えます</li>
+                    <li>最後にどこをシステムにするのかを考え皆様により良いシステムを提供します</li>
+                  </ul>
+                </div>
+                <img class="detail-button" src="./images/Button/ButtonMoreDetail.png" alt="より詳細ボタン">
+              </div>
 
-            <!-- どんなサービスを提供しているのか -->
-            <div class="two-frame">
-              <p>どんなサービスを提供しているのか</p>
-              <ul>
-                <li>お客様のサービスの設計を支援</li>
-                <li>業務の流れや仕事の進め方の設計を支援</li>
-                <li>サービスを実現するためのシステム制作</li>
-                <li>システム製造活動の改善を支援</li>
-              </ul>
-              <img class="wood-frame" src="./images/Page-top/flame.png" alt="どんなサービスを提供しているのか" />
-              <img class="detail-button" src="./images/Button/ButtonMoreDetail.png" alt="より詳細ボタン">
+              <!-- どんなサービスを提供しているのか -->
+              <div class="two-frame">
+                <div id="what-services">
+                  <img class="wood-frame" src="./images/Page-top/flame.png" alt="どんなサービスを提供しているのか" />
+                  <p>どんなサービスを<br>提供しているのか</p>
+                  <ul>
+                    <li>お客様のサービスの設計を支援</li>
+                    <li>業務の流れや仕事の進め方の設計を支援</li>
+                    <li>サービスを実現するためのシステム制作</li>
+                    <li>システム製造活動の改善を支援</li>
+                  </ul>
+                </div>
+                <img class="detail-button" src="./images/Button/ButtonMoreDetail.png" alt="より詳細ボタン">
+              </div>
             </div>
           </div>
 
@@ -134,33 +149,38 @@
           <div id="our-attitude">
             <h3>サービスへの心構え</h3>
 
-            <!-- 企業理念 -->
-            <div class="two-frame">
-              <p>企業理念</p>
-              <ol id="sympathy-list">
-                <li>信用と信頼を貫く</li>
-                <li>正しいことを提供する</li>
-                <li>先を知り、主流を成す</li>
-                <li>倫理を堅持する</li>
-              </ol>
-              <img class="wood-frame" src="./images/Page-top/frame2.png" alt="企業理念" />
-              <img class="detail-button" src="./images/Button/ButtonMoreDetail2.png" alt="より詳細ボタン">
-            </div>
+            <div id="our-attitude-description">
+              <!-- 企業理念 -->
+              <div class="two-frame">
+                <div id="what-tympathy">
+                  <img class="wood-frame" src="./images/Page-top/frame2.png" alt="企業理念" />
+                  <p>企業理念</p>
+                  <ol>
+                    <li>信用と信頼を貫く</li>
+                    <li>正しいことを提供する</li>
+                    <li>先を知り、主流を成す</li>
+                    <li>倫理を堅持する</li>
+                  </ol>
+                </div>
+                <img class="detail-button" src="./images/Button/ButtonMoreDetail2.png" alt="より詳細ボタン">
+              </div>
 
-            <!-- モットー -->
-            <div class="two-frame">
-              <p>モットー</p>
-              <ul id="motto-list">
-                <li>より、シンプルに</li>
-                <li>より、スマートに</li>
-                <li>より、クールに</li>
-                <li>より、リアルに</li>
-              </ul>
-              <img class="wood-frame" src="./images/Page-top/frame2.png" alt="モットー" />
-              <img class="detail-button" src="./images/Button/ButtonMoreDetail2.png" alt="より詳細ボタン">
+              <!-- モットー -->
+              <div class="two-frame">
+                <div id="what-motto">
+                  <img class="wood-frame" src="./images/Page-top/frame2.png" alt="モットー" />
+                  <p>モットー</p>
+                  <ul>
+                    <li>より、シンプルに</li>
+                    <li>より、スマートに</li>
+                    <li>より、クールに</li>
+                    <li>より、リアルに</li>
+                  </ul>
+                </div>
+                <img class="detail-button" src="./images/Button/ButtonMoreDetail2.png" alt="より詳細ボタン">
+              </div>
             </div>
           </div>
-
         </div>
         </section>
 
@@ -173,7 +193,7 @@
 
           <!-- ロゴ表示分 -->
           <div id="logo-on-footer">
-            <img src="./images/TradeMark/TradeMarkWide.svg" alt="フッター・ロゴ" />
+            <img src="./images/TradeMark/TradeMarkWide.png" alt="フッター・ロゴ" />
           </div>
 
           <!-- フッター表示部 -->

@@ -23,7 +23,7 @@
 
   p {
     font-family: "Noto Serif JP", serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 1.85;
     font-weight: 400;
     color: black;
@@ -49,11 +49,11 @@
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 2.2rem;
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 1.8rem;
   }
 
   h4 {
@@ -163,7 +163,16 @@
 
   /*** レイアウト構造の設定 *************************/
   /* 横幅設定 */
+
+  html {
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+    margin: 0 auto 0 auto;
+  }
+
   body {
+    position: relative;
     width: 100%;
     min-width: 768px;
     max-width: 1080px;
@@ -172,462 +181,230 @@
 
   /* ヘッダー */
   header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 100%;
     min-width: 768px;
     max-width: 1080px;
     height: 80px;
-  }
-
-  #logo {
-    position: relative;
-    display: inline-block;
-    top: 0;
-    z-index: 51;
-    width: 150px;
-    margin-left: 15px;
-    padding: 15px 0;
-  }
-
-  /* ナビゲーションのレイアウト */
-  #nav-pc {
-    font-size: 16px;
-    padding-right: 30px;
-    padding-top: 34px;
-  }
-
-  /* ナビゲーションのリンクの装飾設定 */
-  #nav-pc > a {
-    text-decoration: none;
-    margin-left: 20px;
-  }
-  #nav-pc > a:link {
-    color: #0d0d0d;
-  }
-  #nav-pc > a:visited {
-    color: #0d0d0d;
-  }
-  #nav-pc > a:hover {
-    color: #0d0d0d;
-    text-decoration: underline;
-  }
-  #nav-pc > a:active {
-    color: #0d0d0d;
-  }
-
-  #footer-nav-pc > nav > p {
-    margin: 8px 0;
-    padding: 0 0;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  #footer-nav-pc > nav > p > a {
-    text-decoration: none;
-  }
-  #footer-nav-pc > nav > p > a:link {
-    color: #e7e7e7;
-  }
-  #footer-nav-pc > nav > p > a:visited {
-    color: #e7e7e7;
-  }
-  #footer-nav-pc > nav > p > a:hover {
-    color: #e7e7e7;
-    text-decoration: underline;
-  }
-  #footer-nav-pc > nav > p > a:active {
-    color: #e7e7e7;
-  }
-
-  /* メインビジュアル*/
-  #main-visual {
-    position: relative;
-    width: 100%;
-  }
-
-  #main-message {
-    position: absolute;
-    top: 150px;
-    left: 0;
-    width: 100%;
-    min-width: 620px;
-    height: 420px;
-    z-index: 11;
-  }
-
-  #main-message > h1 {
-    width: 80%;
-    min-width: 768px;
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  #main-message > p {
-    width: 100%;
-    min-width: 768px;
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  #main-visual > img {
-    width: 100%;
-    min-width: 768px;
-    max-width: 1080px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-  }
-
-  /* コンテンツ主部 */
-
-  #main-description {
-    position: absolute;
-    top: 642px;
-    display: block;
-    width: 100%;
-    min-width: 738px;
-    max-width: 1050px;
-    margin: 0 auto 0 auto;
-    padding-left: 30px;
-  }
-
-  /* フッター部 */
-  #footer-belt-pc {
-    position: relative;
-    display: block;
-    top: 2040px;
-    width: 100%;
-    max-width: 1050px;
-    min-width: 768px;
-    height: 390px;
-    margin: 0 auto 0 auto;
-    padding-left: 30px;
-    background-color: #4b1b9a;
-  }
-
-  #footer-belt-pc h4 {
-    margin: 20px 0 10px 0;
-    color: #e7e7e7;
-  }
-
-  #footer-belt-pc p {
-    margin: 10px 0;
-    padding-left: 20px;
-    font-size: 20px;
-    line-height: 28px;
-    color: #e7e7e7;
-  }
-
-  #logo-on-footer {
-    z-index: 51;
-    position: relative;
-    display: block;
-    top: 15px;
-    z-index: 51;
-    height: 50px;
-    margin: 0 0;
-    text-align: center;
-  }
-
-  #logo-on-footer > img {
-    width: 150px;
-  }
-
-  #footer-zone {
-    z-index: 51;
-    position: relative;
-    display: block;
-    top: 20px;
-    width: 100%;
-    height: 260px;
-    margin: 0 0;
-    padding: 10px 0;
-  }
-
-  #footer-nav-pc {
-    display: inline-block;
-    margin-left: 60px;
-    width: 15%;
-    min-width: 150px;
-    vertical-align: top;
-  }
-
-  #footer-nav-pc > nav {
-    padding-left: 20px;
-  }
-
-  #contact {
-    display: inline-block;
-    margin-left: 40px;
-    vertical-align: top;
-  }
-
-  #business-hours {
-    display: inline-block;
-    margin-left: 40px;
-    vertical-align: top;
-  }
-
-  #copyright {
-    display: block;
-    margin: 0 0;
-    padding: 20px 0 10px 0;
-    width: 100%;
-    text-align: right;
-  }
-
-  #copyright > spam {
-    margin: 0 0;
-    width: 100%;
-    padding-right: 20px;
-    min-width: 280px;
-    font-size: 18px;
-    color: #e7e7e7;
-  }
-
-  /*** レイアウト構造の設定 *************************/
-  /* 横幅設定 */
-  body {
-    max-width: 1080px;
-    min-width: 960px;
     margin: 0 auto 0 auto;
   }
 
-  /* スマフォ用ナビゲーション非表示 */
-  #nav-sp {
-    display: none;
-  }
-
-  /* ハンバーガーメニュー 非表示*/
-  #menu-sp {
-    display: none;
-  }
-
-  /* ヘッダー */
-  header {
-    display: flex;
-    justify-content: space-between;
-    min-width: 1080px;
-    max-width: 1080px;
-    height: 80px;
-  }
-
-  #logo {
-    position: relative;
-    display: inline-block;
-    top: 0;
-    z-index: 51;
-    width: 150px;
-    margin-left: 15px;
-    padding: 15px 0;
-  }
-
-  /* ナビゲーションのレイアウト */
-  #nav-pc {
-    font-size: 16px;
-    padding-right: 30px;
-    padding-top: 34px;
-  }
-
-  /* ナビゲーションのリンクの装飾設定 */
-  #nav-pc > a {
-    text-decoration: none;
-    margin-left: 20px;
-  }
-  #nav-pc > a:link {
-    color: #0d0d0d;
-  }
-  #nav-pc > a:visited {
-    color: #0d0d0d;
-  }
-  #nav-pc > a:hover {
-    color: #0d0d0d;
-    text-decoration: underline;
-  }
-  #nav-pc > a:active {
-    color: #0d0d0d;
-  }
-
-  #footer-nav-pc > nav > p {
-    margin: 8px 0;
-    padding: 0 0;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  #footer-nav-pc > nav > p > a {
-    text-decoration: none;
-  }
-  #footer-nav-pc > nav > p > a:link {
-    color: #e7e7e7;
-  }
-  #footer-nav-pc > nav > p > a:visited {
-    color: #e7e7e7;
-  }
-  #footer-nav-pc > nav > p > a:hover {
-    color: #e7e7e7;
-    text-decoration: underline;
-  }
-  #footer-nav-pc > nav > p > a:active {
-    color: #e7e7e7;
-  }
-
-  /* メインビジュアル*/
-  #main-visual {
-    position: relative;
-    width: 100%;
-  }
-
-  #main-img {
-    position: absolute;
-    margin: 0 0;
-  }
-
-  #main-message {
-    position: absolute;
-    top: 400px;
-    left: 0;
-    width: 100%;
-    min-width: 620px;
-    height: 420px;
-    z-index: 11;
-  }
-
-  #main-message > h1 {
-    position: absolute;
-    top: 160px;
-    width: 80%;
-    min-width: 1080px;
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  #main-message > p {
-    position: absolute;
-    top: 290px;
-    width: 100%;
-    min-width: 1080px;
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  #main-visual > div {
-    position: absolute;
-    top: 0px;
-    max-width: 1080px;
-    left: 0;
-    z-index: 10;
-  }
-
-  /* スマフォ用イメージ非表示 */
+   /* スマホ用ナビを非表示 */
+  #nav-sp,
+  #menu-sp,
   #img-sp {
     display: none;
   }
 
-  /* コンテンツ主部 */
-
-  #main-description {
-    position: absolute;
-    top: 642px;
-    width: 100%;
-    display: block;
-    max-width: 1050px;
-    min-width: 1050px;
-    margin: 0 auto 0 auto;
-    padding-left: 30px;
+  #logo {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    z-index: 51;
+    width: 150px;
+    margin-left: 15px;
+    padding: 15px 0;
   }
 
-  /* フッター部 */
-  #footer-belt-pc {
+  /* ナビゲーションのレイアウト */
+  #nav-pc {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 30px;
+    padding-top: 34px;
+  }
+
+    /* ナビゲーションのリンクの装飾設定 */
+  #nav-pc > a {
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  #nav-pc > a:link {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:visited {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+  }
+  #nav-pc > a:active {
+    color: #0d0d0d;
+  }
+
+  /* メインビジュアル */
+  #main-visual {
     position: relative;
     display: block;
-    top: 2040px;
     width: 100%;
-    max-width: 1050px;
-    min-width: 1050px;
-    height: 390px;
-    margin: 0 auto 0 auto;
-    padding-left: 30px;
-    background-color: #4b1b9a;
+    min-width: 768px;
+    max-width: 1080px
   }
 
-  #footer-belt-pc h4 {
-    margin: 20px 0 10px 0;
-    color: #e7e7e7;
-  }
-
-  #footer-belt-pc p {
-    margin: 10px 0;
-    padding-left: 20px;
-    font-size: 20px;
-    line-height: 28px;
-    color: #e7e7e7;
-  }
-
-  #logo-on-footer {
-    z-index: 51;
+  #main-message {
     position: relative;
     display: block;
-    top: 15px;
-    z-index: 51;
-    height: 50px;
-    margin: 0 0;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+    z-index: 11;
+  }
+
+  #main-visual > img {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+    z-index: 49;
+  }
+
+  #img-pc {
     text-align: center;
   }
 
-  #logo-on-footer > img {
-    width: 150px;
+  #main-message > h1 {
+    position: absolute;
+    top: 5.5rem;
+    display: block;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 51;
   }
 
-  #footer-zone {
-    z-index: 51;
+  #main-message > p {
+    position: absolute;
+    top: 11rem;
+    display: block;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* ページ内での説明本体 */
+
+  #main-description {
     position: relative;
     display: block;
-    top: 20px;
     width: 100%;
-    height: 260px;
+    min-width: 768px;
+    max-width: 1080px;
+    margin: 0 auto 0 auto;
+  }
+
+  /* フッター部 */
+
+  /* フッター全枠 */
+  #footer-belt-pc {
+    position: relative;
+    display: block;
+    z-index: 49;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+    height: 390px;
+    margin: 0 auto 0 auto;
+    background-color: #4b1b9a;
+  }
+
+  /* フッターロゴ */
+  #logo-on-footer {
+    position: relative;
+    display: block;
+    z-index: 51;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1080px;
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  /* フッター表示部のみ見た構造 */
+  #footer-zone {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    z-index: 51;
+    top: 20px;
+  }
+
+  #footer-zone h4 {
     margin: 0 0;
-    padding: 10px 0;
+    padding: 20px 0 5px 0;
+    color: #e7e7e7;
   }
 
   #footer-nav-pc {
     display: inline-block;
-    margin-left: 60px;
-    width: 15%;
-    min-width: 150px;
     vertical-align: top;
+  }
+
+  #footer-nav-pc > nav > p {
+    font-size: 1.0rem;
+    line-height: 1.6rem;
   }
 
   #footer-nav-pc > nav {
     padding-left: 20px;
   }
 
+  #footer-nav-pc > nav > p > a {
+    text-decoration: none;
+  }
+  #footer-nav-pc > nav > p > a:link {
+    color: #e7e7e7;
+  }
+  #footer-nav-pc > nav > p > a:visited {
+    color: #e7e7e7;
+  }
+  #footer-nav-pc > nav > p > a:hover {
+    color: #e7e7e7;
+    text-decoration: underline;
+  }
+  #footer-nav-pc > nav > p > a:active {
+    color: #e7e7e7;
+  }
+
   #contact {
     display: inline-block;
-    margin-left: 40px;
     vertical-align: top;
   }
 
   #business-hours {
     display: inline-block;
-    margin-left: 40px;
     vertical-align: top;
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  #contact p,
+  #address p,
+  #tel-mail p,
+  #business-hours p {
+    margin: 0 0;
+    padding: 0 0 5px 20px;
+    font-size: 1.0rem;
+    line-height: 1.3rem;
+    color: #e7e7e7;
   }
 
   #copyright {
     display: block;
     margin: 0 0;
-    padding: 20px 0 10px 0;
+    margin: 10px 0;
     width: 100%;
     text-align: right;
   }
@@ -635,9 +412,8 @@
   #copyright > spam {
     margin: 0 0;
     width: 100%;
-    padding-right: 20px;
-    min-width: 280px;
-    font-size: 18px;
+    padding-right: 1.5rem;
+    font-size: 0.9rem;
     color: #e7e7e7;
   }
 
@@ -662,7 +438,7 @@
 
   p {
     font-family: "Noto Serif JP", serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 1.85;
     font-weight: 400;
     color: black;
@@ -677,7 +453,6 @@
   a:active,
   a:link {
     font-family: "Noto Sans JP";
-    color: white;
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
     -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
@@ -689,11 +464,11 @@
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 2.2rem;
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 1.8rem;
   }
 
   h4 {
@@ -804,20 +579,35 @@
   /*** レイアウト構造の設定 *************************/
   /* 横幅設定 */
 
-  * {
+  html {
     width: 100%;
-    height: auto;
+    max-width: 767px;
+    margin: 0 auto 0 auto;
   }
 
   body {
+    position: relative;
     width: 100%;
-    min-width: 280px;
-    height: auto;
-    margin: 0;
+    max-width: 767px;
+    margin: 0 auto 0 auto;
   }
 
-  /* PC用ナビゲーション非表示 */
-  #nav-pc {
+  /* ヘッダー */
+  header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 767px;
+    height: 80px;
+    margin: 0 auto 0 auto;
+  }
+
+   /* スマホ用ナビを非表示 */
+  #nav-pc,
+  #img-pc,
+  #logo,
+  #logo > img {
     display: none;
   }
 
@@ -848,44 +638,123 @@
     right: 20px;
   }
 
-  /* ナビゲーションメニュー用ロゴ */
-  #logo-sp {
-    width: 80%;
-    margin: 0 0;
-    padding: 10px 10px;
-  }
 
-  /* ヘッダー */
-  header {
+
+  /* メインビジュアル */
+  #main-visual {
+    position: relative;
     display: block;
     width: 100%;
-    height: auto;
+    max-width: 767px
   }
 
-  #logo {
-    position: relative;
-    display: inline-block;
-    top: 0;
-    z-index: 51;
-    width: 40%;
-    height: auto;
-    margin-left: 10%;
-    padding: 15px 0;
-  }
-
-  #nav-sp > .menu {
+  #main-message {
     position: relative;
     display: block;
-    margin: 10px 30px;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    max-width: 767px;
+    z-index: 11;
   }
 
-  /* ナビゲーションのリンクの装飾設定 */
+  #main-visual > img {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 767px;
+    z-index: 49;
+  }
+
+  #img-pc {
+    text-align: center;
+  }
+
+  #main-message > h1 {
+    position: absolute;
+    top: 5.5rem;
+    display: block;
+    width: 100%;
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 51;
+  }
+
+  #main-message > p {
+    position: absolute;
+    top: 11rem;
+    display: block;
+    width: 100%;
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* ページ内での説明本体 */
+
+  #main-description {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 767px;
+    margin: 0 auto 0 auto;
+  }
+
+  /* フッター部 */
+
+  /* フッター全枠 */
+  #footer-belt-pc {
+    position: relative;
+    display: block;
+    z-index: 49;
+    width: 100%;
+    max-width: 767px;
+    height: 390px;
+    margin: 0 auto 0 auto;
+    background-color: #4b1b9a;
+  }
+
+  /* フッターロゴ */
+  #logo-on-footer {
+    position: relative;
+    display: block;
+    z-index: 51;
+    width: 100%;
+    max-width: 767px;
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  /* フッター表示部のみ見た構造 */
+  #footer-zone {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    z-index: 51;
+    top: 20px;
+  }
+
+  #footer-zone h4 {
+    margin: 0 0;
+    padding: 20px 0 5px 0;
+    color: #e7e7e7;
+  }
+
+  #footer-nav-pc {
+    display: inline-block;
+    vertical-align: top;
+  }
 
   #footer-nav-pc > nav > p {
-    margin: 8px 0;
-    padding: 0 0;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.0rem;
+    line-height: 1.6rem;
+  }
+
+  #footer-nav-pc > nav {
+    padding-left: 20px;
   }
 
   #footer-nav-pc > nav > p > a {
@@ -905,148 +774,33 @@
     color: #e7e7e7;
   }
 
-  /* メインビジュアル*/
-  #main-visual {
-    position: relative;
-    width: 100%;
-  }
-
-  #main-message {
-    position: absolute;
-    top: 150px;
-    left: 0;
-    width: 100%;
-/*    min-width: 620px;*/
-    height: 420px;
-    z-index: 11;
-  }
-
-  #main-message > h1 {
-    width: 80%;
-/*    min-width: 767px;
-    max-width: 767px;*/
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  #main-message > p {
-    width: 100%;
-/*    min-width: 767px;
-    max-width: 767px;*/
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-
-  #main-visual > img {
-/*    max-width: 767px;*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-  }
-
-  /* pc用イメージ非表示 */
-  #img-pc {
-    display: none;
-  }
-
-  /* コンテンツ主部 */
-
-  #main-description {
-    position: absolute;
-    top: 642px;
-    width: 100%;
-    display: block;
-/*    max-width: 767px;
-    min-width: 767px;*/
-    margin: 0 auto 0 auto;
-    padding-left: 30px;
-  }
-
-  /* フッター部 */
-  #footer-belt-pc {
-    position: relative;
-    display: block;
-    top: 2040px;
-    width: 100%;
-/*    max-width: 767px;
-    min-width: 767px;*/
-    height: 390px;
-    margin: 0 auto 0 auto;
-    padding-left: 30px;
-    background-color: #4b1b9a;
-  }
-
-  #footer-belt-pc h4 {
-    margin: 20px 0 10px 0;
-    color: #e7e7e7;
-  }
-
-  #footer-belt-pc p {
-  /*  margin: 10px 0;*/
-    padding-left: 20px;
-    font-size: 20px;
-    line-height: 28px;
-    color: #e7e7e7;
-  }
-
-  #logo-on-footer {
-    z-index: 51;
-    position: relative;
-    display: block;
-    top: 15px;
-    z-index: 51;
-    height: 50px;
-    margin: 0 0;
-    text-align: center;
-  }
-
-  #logo-on-footer > img {
-    width: 150px;
-  }
-
-  #footer-zone {
-    z-index: 51;
-    position: relative;
-    display: block;
-    top: 20px;
-    width: 100%;
-    height: 260px;
-    margin: 0 0;
-    padding: 10px 0;
-  }
-
-  #footer-nav-pc {
-    display: inline-block;
-    margin-left: 60px;
-    width: 15%;
-    min-width: 150px;
-    vertical-align: top;
-  }
-
-  #footer-nav-pc > nav {
-    padding-left: 20px;
-  }
-
   #contact {
     display: inline-block;
-    margin-left: 40px;
     vertical-align: top;
   }
 
   #business-hours {
     display: inline-block;
-    margin-left: 40px;
     vertical-align: top;
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  #contact p,
+  #address p,
+  #tel-mail p,
+  #business-hours p {
+    margin: 0 0;
+    padding: 0 0 5px 20px;
+    font-size: 1.0rem;
+    line-height: 1.3rem;
+    color: #e7e7e7;
   }
 
   #copyright {
     display: block;
     margin: 0 0;
-    padding: 20px 0 10px 0;
+    margin: 10px 0;
     width: 100%;
     text-align: right;
   }
@@ -1054,9 +808,9 @@
   #copyright > spam {
     margin: 0 0;
     width: 100%;
-    padding-right: 20px;
-    min-width: 280px;
-    font-size: 18px;
+    padding-right: 1.5rem;
+    font-size: 0.9rem;
     color: #e7e7e7;
   }
+
 }
