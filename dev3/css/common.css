@@ -57,11 +57,11 @@
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 1.4rem;
   }
 
   h5 {
-    font-size: 14px;
+    font-size: 1.2rem;
   }
 
   h1,
@@ -240,6 +240,7 @@
   #main-visual {
     position: relative;
     display: block;
+    padding-bottom: 20px;
     width: 100%;
     min-width: 768px;
     max-width: 1080px
@@ -271,26 +272,24 @@
 
   #main-message > h1 {
     position: absolute;
-    top: 5.5rem;
+    top: 115px;
     display: block;
     width: 100%;
     min-width: 768px;
     max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
     z-index: 51;
   }
 
   #main-message > p {
     position: absolute;
-    top: 11rem;
+    top: 210px;
     display: block;
     width: 100%;
     min-width: 768px;
     max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -619,7 +618,7 @@
 
   /* ナビゲーションメニュー用ロゴ */
   #logo-sp {
-    margin: 80px 0 30px 20px;
+    margin: 4.0rem 0 2.0rem 3.0rem;
   }
 
   /* ナビゲーションのリンクの装飾設定 */
@@ -642,8 +641,8 @@
   #nav-sp > .menu {
     text-decoration: none;
     display: block;
-    margin: 0 20px 0 20px;
-    height: 44px;
+    margin: 0 0 2.0rem 3.0rem;
+    height: 1.6rem;
     font-size: 16px;
     background-image: url("images/arrow.png");
     background-repeat: no-repeat;
@@ -687,24 +686,22 @@
 
   #main-message > h1 {
     position: absolute;
-    top: 1.5rem;
+    top: 40px;
     display: block;
     width: 100%;
     max-width: 767px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
     z-index: 51;
   }
 
   #main-message > p {
     position: absolute;
-    top: 5.0rem;
+    top: 85px;
     display: block;
     width: 100%;
     max-width: 767px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -812,7 +809,7 @@
   #copyright {
     position: relative;
     display: block;
-    top: 2.0rem;
+    top: 1.0rem;
     width: 100%;
     text-align: right;
   }
